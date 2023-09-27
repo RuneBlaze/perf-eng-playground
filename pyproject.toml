@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "perf-eng-playground"
+version = "0.1.0"
+description = ""
+authors = ["RuneBlaze <runeblaze@excite.co.jp>"]
+license = "0BSD"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11.0"
+viztracer = "^0.15.6"
+py-spy = "^0.3.14"
+scalene = "^1.5.31.1"
+torch = "^2.0.1"
+numpy = "^1.26.0"
+tqdm = "^4.66.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
